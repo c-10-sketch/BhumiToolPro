@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhumi Tool Pro - Changelog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      min-height: 100vh;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .logo-icon {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .logo-text {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .logo-text span {
+      color: #ff0000;
+      font-weight: 600;
+    }
+
+    .logo-text span i {
+      margin-right: 5px;
+      color: #ffd700;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      color: #ff0000;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .changelog-section {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .changelog-section h2 {
+      font-size: 20px;
+      color: #ff0000;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .version-item {
+      border-left: 4px solid #ff0000;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: #f8f9fa;
+      border-radius: 0 10px 10px 0;
+      transition: all 0.3s ease;
+    }
+
+    .version-item:hover {
+      transform: translateX(5px);
+      box-shadow: 0 5px 15px rgba(255, 0, 0, 0.1);
+    }
+
+    .version-item.latest {
+      background: linear-gradient(135deg, #ff0000 0%, #ff3737 100%);
+      color: white;
+      border-left: 4px solid #ffd700;
+    }
+
+    .version-item.latest .version-number {
+      color: #ffd700;
+    }
+
+    .version-item.latest .version-date {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .version-item.latest .change-list li {
+      color: rgba(255, 255, 255, 0.95);
+    }
+
+    .version-item.latest .change-list li i {
+      color: #ffd700;
+    }
+
+    .version-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .version-number {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ff0000;
+    }
+
+    .version-date {
+      font-size: 13px;
+      color: #999;
+    }
+
+    .version-badge {
+      background: #ff0000;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .version-item.latest .version-badge {
+      background: #ffd700;
+      color: #333;
+    }
+
+    .change-list {
+      list-style: none;
+    }
+
+    .change-list li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .change-list li i {
+      color: #ff0000;
+      margin-top: 3px;
+    }
+
+    .change-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .feature-type {
+      font-weight: 600;
+      margin-right: 5px;
+    }
+
+    .feature-type.new {
+      color: #28a745;
+    }
+
+    .feature-type.fixed {
+      color: #dc3545;
+    }
+
+    .feature-type.improved {
+      color: #ffc107;
+    }
+
+    .version-item.latest .feature-type.new {
+      color: #90EE90;
+    }
+
+    .version-item.latest .feature-type.fixed {
+      color: #ff6b6b;
+    }
+
+    .version-item.latest .feature-type.improved {
+      color: #ffd700;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px;
+      color: #666;
+      font-size: 13px;
+    }
+
+    .footer a {
+      color: #ff0000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        padding: 20px;
+      }
+
+      .logo-text {
+        font-size: 22px;
+      }
+
+      .changelog-section {
+        padding: 20px;
+      }
+
+      .version-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-section">
+        <img class="logo-icon" src="https://raw.githubusercontent.com/MrTusarRX/Controll/refs/heads/main/icon.png" alt="Logo">
+        <h1 class="logo-text">Bhumi Tool <span>Pro <i class="fas fa-plus"></i></span></h1>
+      </div>
+      <h1><i class="fas fa-history"></i> Changelog</h1>
+      <p>Track all the updates, improvements, and new features</p>
+    </div>
+
+    <div class="changelog-section">
+      <h2><i class="fas fa-clipboard-list"></i> Version History</h2>
+
+      <div class="version-item latest">
+        <div class="version-header">
+          <span class="version-number">v3.4</span>
+          <span class="version-badge">Latest</span>
+          <span class="version-date">April 25, 2026</span>
+        </div>
+        <ul class="change-list">
+          <li>
+            <i class="fas fa-plus-circle"></i>
+            <span><span class="feature-type new">NEW:</span> Added News tab with dynamic content loading from GitHub</span>
+          </li>
+          <li>
+            <i class="fas fa-plus-circle"></i>
+            <span><span class="feature-type new">NEW:</span> Added Credits tab to acknowledge contributors</span>
+          </li>
+          <li>
+            <i class="fas fa-paint-brush"></i>
+            <span><span class="feature-type improved">IMPROVED:</span> Changed entire UI color scheme from blue to red for better branding</span>
+          </li>
+          <li>
+            <i class="fas fa-paint-brush"></i>
+            <span><span class="feature-type improved">IMPROVED:</span> Updated "Pro" branding with golden plus icon</span>
+          </li>
+          <li>
+            <i class="fas fa-wrench"></i>
+            <span><span class="feature-type fixed">FIXED:</span> Updated auto-login toggle description to include captcha solving</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="version-item">
+        <div class="version-header">
+          <span class="version-number">v3.3</span>
+          <span class="version-date">April 20, 2026</span>
+        </div>
+        <ul class="change-list">
+          <li>
+            <i class="fas fa-plus-circle"></i>
+            <span><span class="feature-type new">NEW:</span> Premium services integration with WhatsApp contact</span>
+          </li>
+          <li>
+            <i class="fas fa-paint-brush"></i>
+            <span><span class="feature-type improved">IMPROVED:</span> Enhanced GRN management system</span>
+          </li>
+          <li>
+            <i class="fas fa-wrench"></i>
+            <span><span class="feature-type fixed">FIXED:</span> Bug fixes in auto-fill functionality</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="version-item">
+        <div class="version-header">
+          <span class="version-number">v3.2</span>
+          <span class="version-date">April 15, 2026</span>
+        </div>
+        <ul class="change-list">
+          <li>
+            <i class="fas fa-plus-circle"></i>
+            <span><span class="feature-type new">NEW:</span> GRN automation features</span>
+          </li>
+          <li>
+            <i class="fas fa-plus-circle"></i>
+            <span><span class="feature-type new">NEW:</span> Mutation auto-fill functionality</span>
+          </li>
+          <li>
+            <i class="fas fa-paint-brush"></i>
+            <span><span class="feature-type improved">IMPROVED:</span> Better captcha solving accuracy (95%)</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="version-item">
+        <div class="version-header">
+          <span class="version-number">v3.1</span>
+          <span class="version-date">April 10, 2026</span>
+        </div>
+        <ul class="change-list">
+          <li>
+            <i class="fas fa-plus-circle"></i>
+            <span><span class="feature-type new">NEW:</span> Khatian print automation</span>
+          </li>
+          <li>
+            <i class="fas fa-plus-circle"></i>
+            <span><span class="feature-type new">NEW:</span> Plot print automation</span>
+          </li>
+          <li>
+            <i class="fas fa-wrench"></i>
+            <span><span class="feature-type fixed">FIXED:</span> Performance improvements</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="version-item">
+        <div class="version-header">
+          <span class="version-number">v3.0</span>
+          <span class="version-date">April 5, 2026</span>
+        </div>
+        <ul class="change-list">
+          <li>
+            <i class="fas fa-star"></i>
+            <span><span class="feature-type new">MAJOR UPDATE:</span> Complete UI redesign with modern interface</span>
+          </li>
+          <li>
+            <i class="fas fa-plus-circle"></i>
+            <span><span class="feature-type new">NEW:</span> Auto-login feature with captcha solving</span>
+          </li>
+          <li>
+            <i class="fas fa-plus-circle"></i>
+            <span><span class="feature-type new">NEW:</span> ROR/PI auto-fill functionality</span>
+          </li>
+          <li>
+            <i class="fas fa-plus-circle"></i>
+            <span><span class="feature-type new">NEW:</span> Settings panel with toggle controls</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 Bhumi Tool Pro. All rights reserved.</p>
+      <p>
+        <a href="https://wa.link/n5uy10" target="_blank"><i class="fab fa-whatsapp"></i> Contact for Premium</a> | 
+        <a href="https://github.com/MrTusarRX/Controll" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
