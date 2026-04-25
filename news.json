@@ -1,8 +1,8 @@
 {
   "items": [
     {
-      "title": "Bhumi Tool Pro v3.2 Released!",
-      "description": "We're excited to announce the release of Bhumi Tool Pro v3.2 with improved captcha solving and new features.",
+      "title": "Bhumi Tool Pro v3.4 Released!",
+      "description": "We're excited to announce the release of Bhumi Tool Pro v3.4 with improved captcha solving and new features.",
       "date": "April 25, 2026",
       "badge": "NEW",
       "featured": true,
@@ -30,7 +30,7 @@
       "buttons": [
         {
           "text": "Contact Us",
-          "url": "https://chat.whatsapp.com/KsYhwtY8UW8DLw5JprXYWK",
+          "url": "https://wa.link/n5uy10",
           "type": "success",
           "icon": "fab fa-whatsapp"
         }
