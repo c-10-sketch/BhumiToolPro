@@ -1,0 +1,55 @@
+{
+  "items": [
+    {
+      "title": "Bhumi Tool Pro v3.2 Released!",
+      "description": "We're excited to announce the release of Bhumi Tool Pro v3.2 with improved captcha solving and new features.",
+      "date": "April 25, 2026",
+      "badge": "NEW",
+      "featured": true,
+      "buttons": [
+        {
+          "text": "View Changelog",
+          "url": "https://github.com/MrTusarRX/Controll",
+          "type": "primary",
+          "icon": "fas fa-external-link-alt"
+        },
+        {
+          "text": "Watch Tutorial",
+          "url": "https://www.youtube.com/@mrtusarrx1",
+          "type": "secondary",
+          "icon": "fab fa-youtube"
+        }
+      ]
+    },
+    {
+      "title": "Premium Services Available",
+      "description": "Get access to advanced features and priority support with our premium subscription plans.",
+      "date": "April 20, 2026",
+      "badge": "PREMIUM",
+      "featured": false,
+      "buttons": [
+        {
+          "text": "Contact Us",
+          "url": "https://chat.whatsapp.com/KsYhwtY8UW8DLw5JprXYWK",
+          "type": "success",
+          "icon": "fab fa-whatsapp"
+        }
+      ]
+    },
+    {
+      "title": "Premium Auto System Available",
+      "description": "For premium service like more auto system you can purchase our software at cheap price. Get advanced automation features and priority support.",
+      "date": "April 25, 2026",
+      "badge": "PREMIUM",
+      "featured": true,
+      "buttons": [
+        {
+          "text": "Contact for Premium",
+          "url": "https://wa.link/n5uy10",
+          "type": "success",
+          "icon": "fab fa-whatsapp"
+        }
+      ]
+    }
+  ]
+}
