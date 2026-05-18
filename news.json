@@ -22,6 +22,27 @@
       ]
     },
     {
+  "title": "Bhumi Tool Pro v3.4 Released!",
+  "description": "Our Firefox extension was removed from the Firefox Add-ons Store. We have now released a new version of Bhumi Tool Pro. Please check it out and make sure you are using the latest version for the best experience and newest features.",
+  "date": "May 18, 2026",
+  "badge": "IMPORTANT",
+  "featured": true,
+  "buttons": [
+    {
+      "text": "Get Latest Version",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/bhumi-tool-pro-beta/",
+      "type": "primary",
+      "icon": "fab fa-firefox-browser"
+    },
+    {
+      "text": "Watch Tutorial",
+      "url": "https://www.youtube.com/@mrtusarrx1",
+      "type": "secondary",
+      "icon": "fab fa-youtube"
+    }
+  ]
+},
+    {
       "title": "Premium Services Available",
       "description": "Get access to advanced features and priority support with our premium subscription plans.",
       "date": "April 20, 2026",
