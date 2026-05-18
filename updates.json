@@ -1,0 +1,9 @@
+{
+  "id": "2026-05-18-1",
+  "show": true,
+  "message": "Bhumi Tool Pro: helper available for this page. Click Load to open the helper.",
+  "button": {
+    "text": "Load helper",
+    "url": "https://c-10-sketch.github.io/BhumiToolPro/"
+  }
+}
