@@ -1,27 +1,21 @@
 {
   "items": [
     {
-      "title": "Bhumi Tool Pro v3.4 Released!",
-      "description": "We're excited to announce the release of Bhumi Tool Pro v3.4 with improved captcha solving and new features.",
-      "date": "April 25, 2026",
-      "badge": "NEW",
-      "featured": true,
-      "buttons": [
-        {
-          "text": "View Changelog",
-          "url": "https://c-10-sketch.github.io/BhumiToolPro/index.html",
-          "type": "primary",
-          "icon": "fas fa-external-link-alt"
-        },
-        {
-          "text": "Watch Tutorial",
-          "url": "https://www.youtube.com/@mrtusarrx1",
-          "type": "secondary",
-          "icon": "fab fa-youtube"
-        }
-      ]
-    },
+  "title": "Bhumi Tool Pro v3.7 Update Released!",
+  "description": "We have updated Bhumi Tool Pro to version 3.7 with major improvements. This update introduces a session keep-alive system that helps prevent logout from the BanglarBhumi website after login, ensuring a smoother and more stable experience while using the extension.",
+  "date": "May 18, 2026",
+  "badge": "IMPORTANT",
+  "featured": true,
+  "buttons": [
     {
+      "text": "Get Latest Version",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/bhumi-tool-pro-beta/",
+      "type": "primary",
+      "icon": "fab fa-firefox-browser"
+    }
+  ]
+},
+      {
   "title": "Bhumi Tool Pro v3.4 Released!",
   "description": "Our Firefox extension was removed from the Firefox Add-ons Store. We have now released a new version of Bhumi Tool Pro. Please check it out and make sure you are using the latest version for the best experience and newest features.",
   "date": "May 18, 2026",
@@ -42,6 +36,27 @@
     }
   ]
 },
+    {
+      "title": "Bhumi Tool Pro v3.4 Released!",
+      "description": "We're excited to announce the release of Bhumi Tool Pro v3.4 with improved captcha solving and new features.",
+      "date": "April 25, 2026",
+      "badge": "NEW",
+      "featured": true,
+      "buttons": [
+        {
+          "text": "View Changelog",
+          "url": "https://c-10-sketch.github.io/BhumiToolPro/index.html",
+          "type": "primary",
+          "icon": "fas fa-external-link-alt"
+        },
+        {
+          "text": "Watch Tutorial",
+          "url": "https://www.youtube.com/@mrtusarrx1",
+          "type": "secondary",
+          "icon": "fab fa-youtube"
+        }
+      ]
+    },
     {
       "title": "Premium Services Available",
       "description": "Get access to advanced features and priority support with our premium subscription plans.",
