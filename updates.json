@@ -1,6 +1,6 @@
 {
   "id": "2026-11-26-1",
-  "show": true,
+  "show": false,
   "message": "We Have Added Image Auto captcha, For Only For Firefox",
   "button": {
     "text": "Visit Extension Store",
