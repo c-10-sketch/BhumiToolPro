@@ -1,7 +1,7 @@
 {
-  "id": "2026-05-18-1",
-  "show": false,
-  "message": "Fire Fox Removed Our Extension From Mozila  Extension Browser So Make Sure Your Are Using Our latest Extension .",
+  "id": "2026-11-26-1",
+  "show": true,
+  "message": "We Have Added Image Auto captcha, For Only For Firefox",
   "button": {
     "text": "Visit Extension Store",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/bhumi-tool-pro-beta/"
